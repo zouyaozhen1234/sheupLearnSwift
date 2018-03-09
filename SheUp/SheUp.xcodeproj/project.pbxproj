@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		226DDA9999114CF5101A3485 /* Pods_SheUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7697C7AF51E104AE4E6F57 /* Pods_SheUp.framework */; };
+		9D0F5C891FF3350F003A441D /* SheUpNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F5C881FF3350F003A441D /* SheUpNetWorkManager.swift */; };
+		9D0F5C8C1FF346D4003A441D /* SheUpMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F5C8B1FF346D4003A441D /* SheUpMainModel.swift */; };
+		9D0F5C8E1FF34B3C003A441D /* SheUpMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F5C8D1FF34B3C003A441D /* SheUpMainViewModel.swift */; };
+		9D0F5C931FF3891A003A441D /* SheUpMainTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F5C921FF3891A003A441D /* SheUpMainTopCell.swift */; };
+		9D0F5C951FF38943003A441D /* SheUpMiddleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F5C941FF38943003A441D /* SheUpMiddleTableViewCell.swift */; };
+		9D0F5C971FF3894F003A441D /* SheUpBottomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F5C961FF3894F003A441D /* SheUpBottomTableViewCell.swift */; };
+		9D2F231220030F2E003F18AF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F231120030F2E003F18AF /* UIImage+Extension.swift */; };
+		9D2F23142003156E003F18AF /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F23132003156E003F18AF /* UIImageView+WebImage.swift */; };
+		9D32E3A3200C4B280014D9D5 /* SheUpLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32E3A2200C4B280014D9D5 /* SheUpLoginModel.swift */; };
+		9D32E3A7200C4C790014D9D5 /* SheUpLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32E3A6200C4C790014D9D5 /* SheUpLoginViewModel.swift */; };
+		9D32E3A9200C4E1B0014D9D5 /* SheUpProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32E3A8200C4E1B0014D9D5 /* SheUpProtocol.swift */; };
+		9D32E3AB200C53D40014D9D5 /* SheUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32E3AA200C53D40014D9D5 /* SheUpService.swift */; };
+		9D35EC432006FCA900317E39 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35EC422006FCA900317E39 /* Province.swift */; };
+		9D35EC452006FCB800317E39 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35EC442006FCB800317E39 /* City.swift */; };
+		9D36CA6E2008897900C677E9 /* SheUpMineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CA6D2008897900C677E9 /* SheUpMineViewModel.swift */; };
+		9D36CA712008938400C677E9 /* SheUpLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CA702008938400C677E9 /* SheUpLoginViewController.swift */; };
+		9D4AC6AB1FF5E49B0052A516 /* encryptionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4AC6AA1FF5E49B0052A516 /* encryptionFile.swift */; };
+		9D4AC6AD1FF5E6300052A516 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4AC6AC1FF5E6300052A516 /* String+MD5.swift */; };
+		9D4E9D381FFF25D80020604C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D4E9D3A1FFF25D80020604C /* InfoPlist.strings */; };
+		9D4E9D431FFF44310020604C /* SheUpMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E9D421FFF44310020604C /* SheUpMineViewController.swift */; };
+		9D56DC561FF1E29700C49C24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56DC551FF1E29700C49C24 /* AppDelegate.swift */; };
+		9D56DC581FF1E29700C49C24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56DC571FF1E29700C49C24 /* ViewController.swift */; };
+		9D56DC5B1FF1E29700C49C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DC591FF1E29700C49C24 /* Main.storyboard */; };
+		9D56DC5D1FF1E29700C49C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DC5C1FF1E29700C49C24 /* Assets.xcassets */; };
+		9D56DC601FF1E29700C49C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DC5E1FF1E29700C49C24 /* LaunchScreen.storyboard */; };
+		9D56DC6D1FF2204D00C49C24 /* SheUpBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56DC6C1FF2204D00C49C24 /* SheUpBaseViewController.swift */; };
+		9D56DC701FF2214200C49C24 /* CommonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56DC6F1FF2214200C49C24 /* CommonFile.swift */; };
+		9D56DC721FF228A100C49C24 /* SheUpHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56DC711FF228A100C49C24 /* SheUpHomeViewController.swift */; };
+		9D56DC741FF229DC00C49C24 /* SheUpSquareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56DC731FF229DC00C49C24 /* SheUpSquareViewController.swift */; };
+		9D56DC761FF229F000C49C24 /* SheUpPublicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56DC751FF229F000C49C24 /* SheUpPublicViewController.swift */; };
+		9D56DC781FF22A0100C49C24 /* SheUpMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56DC771FF22A0100C49C24 /* SheUpMessageViewController.swift */; };
+		9D56DC7C1FF22AF200C49C24 /* SheUpTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56DC7B1FF22AF200C49C24 /* SheUpTabBarViewController.swift */; };
+		9D56DC881FF24E8E00C49C24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DC871FF24E8E00C49C24 /* Images.xcassets */; };
+		9D56DC991FF250D200C49C24 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DC941FF250D100C49C24 /* Default.png */; };
+		9D56DC9A1FF250D200C49C24 /* Default-375w-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DC951FF250D100C49C24 /* Default-375w-667h@2x.png */; };
+		9D56DC9B1FF250D200C49C24 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DC961FF250D100C49C24 /* Default@2x.png */; };
+		9D56DC9C1FF250D200C49C24 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DC971FF250D100C49C24 /* Default-568h@2x.png */; };
+		9D56DC9D1FF250D200C49C24 /* Default-414w-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DC981FF250D200C49C24 /* Default-414w-736h@3x.png */; };
+		9D56DCA81FF2513300C49C24 /* icon144-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DC9E1FF2513200C49C24 /* icon144-144.png */; };
+		9D56DCA91FF2513300C49C24 /* icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DC9F1FF2513200C49C24 /* icon180.png */; };
+		9D56DCAA1FF2513300C49C24 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DCA01FF2513200C49C24 /* Icon.png */; };
+		9D56DCAB1FF2513300C49C24 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DCA11FF2513200C49C24 /* Icon-60.png */; };
+		9D56DCAC1FF2513300C49C24 /* icon152.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DCA21FF2513200C49C24 /* icon152.png */; };
+		9D56DCAD1FF2513300C49C24 /* icon72-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DCA31FF2513200C49C24 /* icon72-72.png */; };
+		9D56DCAE1FF2513300C49C24 /* icon76.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DCA41FF2513300C49C24 /* icon76.png */; };
+		9D56DCAF1FF2513300C49C24 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DCA51FF2513300C49C24 /* Icon@2x.png */; };
+		9D56DCB01FF2513300C49C24 /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DCA61FF2513300C49C24 /* icon-40.png */; };
+		9D56DCB11FF2513300C49C24 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D56DCA71FF2513300C49C24 /* Icon-120.png */; };
+		9D60048120299A4A00AAB1C2 /* SheUpTableViewTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D60048020299A4A00AAB1C2 /* SheUpTableViewTopCell.swift */; };
+		9D60048320299A6200AAB1C2 /* SheUpTableViewCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D60048220299A6200AAB1C2 /* SheUpTableViewCenterCell.swift */; };
+		9D60048620299A7200AAB1C2 /* SheUpTableViewBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D60048420299A7200AAB1C2 /* SheUpTableViewBottomCell.swift */; };
+		9D60048720299A7200AAB1C2 /* SheUpTableViewBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D60048520299A7200AAB1C2 /* SheUpTableViewBottomCell.xib */; };
+		9D60048920299D2200AAB1C2 /* CusCommonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D60048820299D2200AAB1C2 /* CusCommonFile.swift */; };
+		9D60048D2029A6CB00AAB1C2 /* SheUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D60048C2029A6CB00AAB1C2 /* SheUpTableViewCell.swift */; };
+		9D6004912029B28600AAB1C2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6004902029B28600AAB1C2 /* UIColor+Extension.swift */; };
+		9DBC44552004858E009F292D /* SheUpRXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBC44542004858E009F292D /* SheUpRXViewController.swift */; };
+		9DDB43DE1FFF5A2E0020F079 /* CAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDB43DD1FFF5A2E0020F079 /* CAButton.swift */; };
+		9DDB43E01FFF5A3D0020F079 /* CABackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDB43DF1FFF5A3D0020F079 /* CABackView.swift */; };
+		9DDB43E21FFF5A4C0020F079 /* CALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDB43E11FFF5A4C0020F079 /* CALabel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		112890758E853CF87A44B984 /* Pods-SheUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SheUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SheUp/Pods-SheUp.debug.xcconfig"; sourceTree = "<group>"; };
+		6B7697C7AF51E104AE4E6F57 /* Pods_SheUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SheUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D0F5C881FF3350F003A441D /* SheUpNetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpNetWorkManager.swift; sourceTree = "<group>"; };
+		9D0F5C8B1FF346D4003A441D /* SheUpMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpMainModel.swift; sourceTree = "<group>"; };
+		9D0F5C8D1FF34B3C003A441D /* SheUpMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpMainViewModel.swift; sourceTree = "<group>"; };
+		9D0F5C921FF3891A003A441D /* SheUpMainTopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheUpMainTopCell.swift; sourceTree = "<group>"; };
+		9D0F5C941FF38943003A441D /* SheUpMiddleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpMiddleTableViewCell.swift; sourceTree = "<group>"; };
+		9D0F5C961FF3894F003A441D /* SheUpBottomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpBottomTableViewCell.swift; sourceTree = "<group>"; };
+		9D2F231120030F2E003F18AF /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		9D2F23132003156E003F18AF /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
+		9D32E3A2200C4B280014D9D5 /* SheUpLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpLoginModel.swift; sourceTree = "<group>"; };
+		9D32E3A6200C4C790014D9D5 /* SheUpLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpLoginViewModel.swift; sourceTree = "<group>"; };
+		9D32E3A8200C4E1B0014D9D5 /* SheUpProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpProtocol.swift; sourceTree = "<group>"; };
+		9D32E3AA200C53D40014D9D5 /* SheUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpService.swift; sourceTree = "<group>"; };
+		9D35EC422006FCA900317E39 /* Province.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
+		9D35EC442006FCB800317E39 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		9D36CA6D2008897900C677E9 /* SheUpMineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpMineViewModel.swift; sourceTree = "<group>"; };
+		9D36CA702008938400C677E9 /* SheUpLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpLoginViewController.swift; sourceTree = "<group>"; };
+		9D4AC6AA1FF5E49B0052A516 /* encryptionFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = encryptionFile.swift; sourceTree = "<group>"; };
+		9D4AC6AC1FF5E6300052A516 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		9D4AC6AE1FF5E6A50052A516 /* SheUpBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SheUpBridge.h; sourceTree = "<group>"; };
+		9D4E9D341FFF250F0020604C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		9D4E9D351FFF250F0020604C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		9D4E9D391FFF25D80020604C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		9D4E9D3B1FFF25F10020604C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9D4E9D421FFF44310020604C /* SheUpMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheUpMineViewController.swift; sourceTree = "<group>"; };
+		9D56DC521FF1E29700C49C24 /* SheUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D56DC551FF1E29700C49C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D56DC571FF1E29700C49C24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D56DC5A1FF1E29700C49C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D56DC5C1FF1E29700C49C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D56DC5F1FF1E29700C49C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D56DC611FF1E29700C49C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D56DC6C1FF2204D00C49C24 /* SheUpBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpBaseViewController.swift; sourceTree = "<group>"; };
+		9D56DC6F1FF2214200C49C24 /* CommonFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFile.swift; sourceTree = "<group>"; };
+		9D56DC711FF228A100C49C24 /* SheUpHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpHomeViewController.swift; sourceTree = "<group>"; };
+		9D56DC731FF229DC00C49C24 /* SheUpSquareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpSquareViewController.swift; sourceTree = "<group>"; };
+		9D56DC751FF229F000C49C24 /* SheUpPublicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpPublicViewController.swift; sourceTree = "<group>"; };
+		9D56DC771FF22A0100C49C24 /* SheUpMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpMessageViewController.swift; sourceTree = "<group>"; };
+		9D56DC7B1FF22AF200C49C24 /* SheUpTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpTabBarViewController.swift; sourceTree = "<group>"; };
+		9D56DC871FF24E8E00C49C24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9D56DC941FF250D100C49C24 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9D56DC951FF250D100C49C24 /* Default-375w-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-375w-667h@2x.png"; sourceTree = "<group>"; };
+		9D56DC961FF250D100C49C24 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9D56DC971FF250D100C49C24 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9D56DC981FF250D200C49C24 /* Default-414w-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-414w-736h@3x.png"; sourceTree = "<group>"; };
+		9D56DC9E1FF2513200C49C24 /* icon144-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon144-144.png"; sourceTree = "<group>"; };
+		9D56DC9F1FF2513200C49C24 /* icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon180.png; sourceTree = "<group>"; };
+		9D56DCA01FF2513200C49C24 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		9D56DCA11FF2513200C49C24 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		9D56DCA21FF2513200C49C24 /* icon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon152.png; sourceTree = "<group>"; };
+		9D56DCA31FF2513200C49C24 /* icon72-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon72-72.png"; sourceTree = "<group>"; };
+		9D56DCA41FF2513300C49C24 /* icon76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon76.png; sourceTree = "<group>"; };
+		9D56DCA51FF2513300C49C24 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		9D56DCA61FF2513300C49C24 /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
+		9D56DCA71FF2513300C49C24 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		9D60048020299A4A00AAB1C2 /* SheUpTableViewTopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpTableViewTopCell.swift; sourceTree = "<group>"; };
+		9D60048220299A6200AAB1C2 /* SheUpTableViewCenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpTableViewCenterCell.swift; sourceTree = "<group>"; };
+		9D60048420299A7200AAB1C2 /* SheUpTableViewBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpTableViewBottomCell.swift; sourceTree = "<group>"; };
+		9D60048520299A7200AAB1C2 /* SheUpTableViewBottomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SheUpTableViewBottomCell.xib; sourceTree = "<group>"; };
+		9D60048820299D2200AAB1C2 /* CusCommonFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusCommonFile.swift; sourceTree = "<group>"; };
+		9D60048C2029A6CB00AAB1C2 /* SheUpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheUpTableViewCell.swift; sourceTree = "<group>"; };
+		9D6004902029B28600AAB1C2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		9DBC44542004858E009F292D /* SheUpRXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheUpRXViewController.swift; sourceTree = "<group>"; };
+		9DDB43DD1FFF5A2E0020F079 /* CAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAButton.swift; sourceTree = "<group>"; };
+		9DDB43DF1FFF5A3D0020F079 /* CABackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CABackView.swift; sourceTree = "<group>"; };
+		9DDB43E11FFF5A4C0020F079 /* CALabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALabel.swift; sourceTree = "<group>"; };
+		C3CB5D65AD7A4BD15691C419 /* Pods-SheUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SheUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SheUp/Pods-SheUp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D56DC4F1FF1E29700C49C24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226DDA9999114CF5101A3485 /* Pods_SheUp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D0F5C871FF334B3003A441D /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				9D0F5C881FF3350F003A441D /* SheUpNetWorkManager.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		9D0F5C911FF388FC003A441D /* MainCell */ = {
+			isa = PBXGroup;
+			children = (
+				9D0F5C921FF3891A003A441D /* SheUpMainTopCell.swift */,
+				9D0F5C941FF38943003A441D /* SheUpMiddleTableViewCell.swift */,
+				9D0F5C961FF3894F003A441D /* SheUpBottomTableViewCell.swift */,
+			);
+			path = MainCell;
+			sourceTree = "<group>";
+		};
+		9D3FF6181FFDD59600CE34D3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		9D4E9D3C1FFF43A90020604C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				9D0F5C911FF388FC003A441D /* MainCell */,
+				9D4E9D421FFF44310020604C /* SheUpMineViewController.swift */,
+				9D36CA702008938400C677E9 /* SheUpLoginViewController.swift */,
+				9D4E9D3F1FFF43C10020604C /* ViewModel */,
+				9D4E9D3E1FFF43BB0020604C /* Model */,
+				9D4E9D3D1FFF43AE0020604C /* Cell */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		9D4E9D3D1FFF43AE0020604C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9D60048C2029A6CB00AAB1C2 /* SheUpTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9D4E9D3E1FFF43BB0020604C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D35EC422006FCA900317E39 /* Province.swift */,
+				9D35EC442006FCB800317E39 /* City.swift */,
+				9D32E3A2200C4B280014D9D5 /* SheUpLoginModel.swift */,
+				9D32E3AA200C53D40014D9D5 /* SheUpService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D4E9D3F1FFF43C10020604C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9D36CA6D2008897900C677E9 /* SheUpMineViewModel.swift */,
+				9D32E3A6200C4C790014D9D5 /* SheUpLoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9D56DC491FF1E29700C49C24 = {
+			isa = PBXGroup;
+			children = (
+				9DBC44542004858E009F292D /* SheUpRXViewController.swift */,
+				9D4E9D3A1FFF25D80020604C /* InfoPlist.strings */,
+				9D56DC541FF1E29700C49C24 /* SheUp */,
+				9D56DC531FF1E29700C49C24 /* Products */,
+				A4EF051E52C5C6A7E103C6F5 /* Pods */,
+				FC35EA6DD7158FFFE58EF09F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D56DC531FF1E29700C49C24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D56DC521FF1E29700C49C24 /* SheUp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D56DC541FF1E29700C49C24 /* SheUp */ = {
+			isa = PBXGroup;
+			children = (
+				9D60047920298E8000AAB1C2 /* ViewModel */,
+				9D6F6F1A202853C000570D45 /* gunagchang */,
+				9D4E9D3C1FFF43A90020604C /* Mine */,
+				9D0F5C871FF334B3003A441D /* NetWork */,
+				9D56DC891FF2507D00C49C24 /* ImageAndIcon */,
+				9D56DC6B1FF1EEBE00C49C24 /* Main */,
+				9D56DC6A1FF1EDF300C49C24 /* Model */,
+				9D56DC681FF1EDF200C49C24 /* View */,
+				9D56DC691FF1EDF300C49C24 /* ViewController */,
+				9D56DC671FF1EDF200C49C24 /* ViewModel */,
+				9D3FF6181FFDD59600CE34D3 /* Library */,
+				9D56DC551FF1E29700C49C24 /* AppDelegate.swift */,
+				9D56DC571FF1E29700C49C24 /* ViewController.swift */,
+				9D56DC591FF1E29700C49C24 /* Main.storyboard */,
+				9D56DC5C1FF1E29700C49C24 /* Assets.xcassets */,
+				9D56DC5E1FF1E29700C49C24 /* LaunchScreen.storyboard */,
+				9D56DC611FF1E29700C49C24 /* Info.plist */,
+				9D56DC6E1FF2211D00C49C24 /* Common */,
+				9D4AC6AE1FF5E6A50052A516 /* SheUpBridge.h */,
+				9D56DC871FF24E8E00C49C24 /* Images.xcassets */,
+			);
+			path = SheUp;
+			sourceTree = "<group>";
+		};
+		9D56DC671FF1EDF200C49C24 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9D0F5C8D1FF34B3C003A441D /* SheUpMainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9D56DC681FF1EDF200C49C24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D56DC691FF1EDF300C49C24 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D56DC711FF228A100C49C24 /* SheUpHomeViewController.swift */,
+				9D56DC751FF229F000C49C24 /* SheUpPublicViewController.swift */,
+				9D56DC771FF22A0100C49C24 /* SheUpMessageViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9D56DC6A1FF1EDF300C49C24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D0F5C8B1FF346D4003A441D /* SheUpMainModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D56DC6B1FF1EEBE00C49C24 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9D56DC6C1FF2204D00C49C24 /* SheUpBaseViewController.swift */,
+				9D56DC7B1FF22AF200C49C24 /* SheUpTabBarViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9D56DC6E1FF2211D00C49C24 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9D56DC6F1FF2214200C49C24 /* CommonFile.swift */,
+				9D4AC6AA1FF5E49B0052A516 /* encryptionFile.swift */,
+				9D4AC6AC1FF5E6300052A516 /* String+MD5.swift */,
+				9DDB43DD1FFF5A2E0020F079 /* CAButton.swift */,
+				9DDB43DF1FFF5A3D0020F079 /* CABackView.swift */,
+				9DDB43E11FFF5A4C0020F079 /* CALabel.swift */,
+				9D2F231120030F2E003F18AF /* UIImage+Extension.swift */,
+				9D2F23132003156E003F18AF /* UIImageView+WebImage.swift */,
+				9D60048820299D2200AAB1C2 /* CusCommonFile.swift */,
+				9D6004902029B28600AAB1C2 /* UIColor+Extension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9D56DC891FF2507D00C49C24 /* ImageAndIcon */ = {
+			isa = PBXGroup;
+			children = (
+				9D56DCA61FF2513300C49C24 /* icon-40.png */,
+				9D56DCA11FF2513200C49C24 /* Icon-60.png */,
+				9D56DCA71FF2513300C49C24 /* Icon-120.png */,
+				9D56DCA01FF2513200C49C24 /* Icon.png */,
+				9D56DCA51FF2513300C49C24 /* Icon@2x.png */,
+				9D56DCA31FF2513200C49C24 /* icon72-72.png */,
+				9D56DCA41FF2513300C49C24 /* icon76.png */,
+				9D56DC9E1FF2513200C49C24 /* icon144-144.png */,
+				9D56DCA21FF2513200C49C24 /* icon152.png */,
+				9D56DC9F1FF2513200C49C24 /* icon180.png */,
+				9D56DC951FF250D100C49C24 /* Default-375w-667h@2x.png */,
+				9D56DC981FF250D200C49C24 /* Default-414w-736h@3x.png */,
+				9D56DC971FF250D100C49C24 /* Default-568h@2x.png */,
+				9D56DC941FF250D100C49C24 /* Default.png */,
+				9D56DC961FF250D100C49C24 /* Default@2x.png */,
+			);
+			path = ImageAndIcon;
+			sourceTree = "<group>";
+		};
+		9D60047720298E6B00AAB1C2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D56DC731FF229DC00C49C24 /* SheUpSquareViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9D60047820298E7700AAB1C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D60048020299A4A00AAB1C2 /* SheUpTableViewTopCell.swift */,
+				9D60048220299A6200AAB1C2 /* SheUpTableViewCenterCell.swift */,
+				9D60048420299A7200AAB1C2 /* SheUpTableViewBottomCell.swift */,
+				9D60048520299A7200AAB1C2 /* SheUpTableViewBottomCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D60047920298E8000AAB1C2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			path = gunagchang/ViewModel;
+			sourceTree = "<group>";
+		};
+		9D60047A20298E8900AAB1C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D6F6F1A202853C000570D45 /* gunagchang */ = {
+			isa = PBXGroup;
+			children = (
+				9D32E3A8200C4E1B0014D9D5 /* SheUpProtocol.swift */,
+				9D60047A20298E8900AAB1C2 /* Model */,
+				9D60047820298E7700AAB1C2 /* View */,
+				9D60047720298E6B00AAB1C2 /* ViewController */,
+			);
+			path = gunagchang;
+			sourceTree = "<group>";
+		};
+		A4EF051E52C5C6A7E103C6F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				112890758E853CF87A44B984 /* Pods-SheUp.debug.xcconfig */,
+				C3CB5D65AD7A4BD15691C419 /* Pods-SheUp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC35EA6DD7158FFFE58EF09F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B7697C7AF51E104AE4E6F57 /* Pods_SheUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D56DC511FF1E29700C49C24 /* SheUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D56DC641FF1E29700C49C24 /* Build configuration list for PBXNativeTarget "SheUp" */;
+			buildPhases = (
+				8D3564B2EEAAA9E91E7B2EA7 /* [CP] Check Pods Manifest.lock */,
+				9D56DC4E1FF1E29700C49C24 /* Sources */,
+				9D56DC4F1FF1E29700C49C24 /* Frameworks */,
+				9D56DC501FF1E29700C49C24 /* Resources */,
+				C32040C0EC81464B47CC8606 /* [CP] Embed Pods Frameworks */,
+				D0AB1C0191B6FC414B1585AB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SheUp;
+			productName = SheUp;
+			productReference = 9D56DC521FF1E29700C49C24 /* SheUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D56DC4A1FF1E29700C49C24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SheUp;
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = sweet;
+				TargetAttributes = {
+					9D56DC511FF1E29700C49C24 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9D56DC4D1FF1E29700C49C24 /* Build configuration list for PBXProject "SheUp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D56DC491FF1E29700C49C24;
+			productRefGroup = 9D56DC531FF1E29700C49C24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D56DC511FF1E29700C49C24 /* SheUp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D56DC501FF1E29700C49C24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D56DCAA1FF2513300C49C24 /* Icon.png in Resources */,
+				9D56DC881FF24E8E00C49C24 /* Images.xcassets in Resources */,
+				9D56DC601FF1E29700C49C24 /* LaunchScreen.storyboard in Resources */,
+				9D56DCAE1FF2513300C49C24 /* icon76.png in Resources */,
+				9D56DCAD1FF2513300C49C24 /* icon72-72.png in Resources */,
+				9D56DC5D1FF1E29700C49C24 /* Assets.xcassets in Resources */,
+				9D60048720299A7200AAB1C2 /* SheUpTableViewBottomCell.xib in Resources */,
+				9D56DCA91FF2513300C49C24 /* icon180.png in Resources */,
+				9D56DCAC1FF2513300C49C24 /* icon152.png in Resources */,
+				9D56DCB01FF2513300C49C24 /* icon-40.png in Resources */,
+				9D4E9D381FFF25D80020604C /* InfoPlist.strings in Resources */,
+				9D56DC9D1FF250D200C49C24 /* Default-414w-736h@3x.png in Resources */,
+				9D56DCA81FF2513300C49C24 /* icon144-144.png in Resources */,
+				9D56DCB11FF2513300C49C24 /* Icon-120.png in Resources */,
+				9D56DCAB1FF2513300C49C24 /* Icon-60.png in Resources */,
+				9D56DC5B1FF1E29700C49C24 /* Main.storyboard in Resources */,
+				9D56DC991FF250D200C49C24 /* Default.png in Resources */,
+				9D56DCAF1FF2513300C49C24 /* Icon@2x.png in Resources */,
+				9D56DC9C1FF250D200C49C24 /* Default-568h@2x.png in Resources */,
+				9D56DC9B1FF250D200C49C24 /* Default@2x.png in Resources */,
+				9D56DC9A1FF250D200C49C24 /* Default-375w-667h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D3564B2EEAAA9E91E7B2EA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SheUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C32040C0EC81464B47CC8606 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SheUp/Pods-SheUp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SheUp/Pods-SheUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0AB1C0191B6FC414B1585AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SheUp/Pods-SheUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D56DC4E1FF1E29700C49C24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDB43E21FFF5A4C0020F079 /* CALabel.swift in Sources */,
+				9D6004912029B28600AAB1C2 /* UIColor+Extension.swift in Sources */,
+				9D56DC781FF22A0100C49C24 /* SheUpMessageViewController.swift in Sources */,
+				9D4AC6AB1FF5E49B0052A516 /* encryptionFile.swift in Sources */,
+				9D56DC701FF2214200C49C24 /* CommonFile.swift in Sources */,
+				9D4AC6AD1FF5E6300052A516 /* String+MD5.swift in Sources */,
+				9D32E3A9200C4E1B0014D9D5 /* SheUpProtocol.swift in Sources */,
+				9D36CA6E2008897900C677E9 /* SheUpMineViewModel.swift in Sources */,
+				9D0F5C931FF3891A003A441D /* SheUpMainTopCell.swift in Sources */,
+				9D32E3AB200C53D40014D9D5 /* SheUpService.swift in Sources */,
+				9DBC44552004858E009F292D /* SheUpRXViewController.swift in Sources */,
+				9D56DC741FF229DC00C49C24 /* SheUpSquareViewController.swift in Sources */,
+				9D56DC7C1FF22AF200C49C24 /* SheUpTabBarViewController.swift in Sources */,
+				9D0F5C971FF3894F003A441D /* SheUpBottomTableViewCell.swift in Sources */,
+				9D60048D2029A6CB00AAB1C2 /* SheUpTableViewCell.swift in Sources */,
+				9D32E3A7200C4C790014D9D5 /* SheUpLoginViewModel.swift in Sources */,
+				9D2F231220030F2E003F18AF /* UIImage+Extension.swift in Sources */,
+				9D56DC761FF229F000C49C24 /* SheUpPublicViewController.swift in Sources */,
+				9D60048120299A4A00AAB1C2 /* SheUpTableViewTopCell.swift in Sources */,
+				9DDB43DE1FFF5A2E0020F079 /* CAButton.swift in Sources */,
+				9D60048320299A6200AAB1C2 /* SheUpTableViewCenterCell.swift in Sources */,
+				9D56DC581FF1E29700C49C24 /* ViewController.swift in Sources */,
+				9D2F23142003156E003F18AF /* UIImageView+WebImage.swift in Sources */,
+				9D0F5C891FF3350F003A441D /* SheUpNetWorkManager.swift in Sources */,
+				9D60048920299D2200AAB1C2 /* CusCommonFile.swift in Sources */,
+				9D60048620299A7200AAB1C2 /* SheUpTableViewBottomCell.swift in Sources */,
+				9D32E3A3200C4B280014D9D5 /* SheUpLoginModel.swift in Sources */,
+				9D4E9D431FFF44310020604C /* SheUpMineViewController.swift in Sources */,
+				9D56DC721FF228A100C49C24 /* SheUpHomeViewController.swift in Sources */,
+				9DDB43E01FFF5A3D0020F079 /* CABackView.swift in Sources */,
+				9D56DC6D1FF2204D00C49C24 /* SheUpBaseViewController.swift in Sources */,
+				9D35EC432006FCA900317E39 /* Province.swift in Sources */,
+				9D35EC452006FCB800317E39 /* City.swift in Sources */,
+				9D0F5C8C1FF346D4003A441D /* SheUpMainModel.swift in Sources */,
+				9D36CA712008938400C677E9 /* SheUpLoginViewController.swift in Sources */,
+				9D56DC561FF1E29700C49C24 /* AppDelegate.swift in Sources */,
+				9D0F5C951FF38943003A441D /* SheUpMiddleTableViewCell.swift in Sources */,
+				9D0F5C8E1FF34B3C003A441D /* SheUpMainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D4E9D3A1FFF25D80020604C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D4E9D391FFF25D80020604C /* zh-Hans */,
+				9D4E9D3B1FFF25F10020604C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9D56DC591FF1E29700C49C24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D56DC5A1FF1E29700C49C24 /* Base */,
+				9D4E9D341FFF250F0020604C /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D56DC5E1FF1E29700C49C24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D56DC5F1FF1E29700C49C24 /* Base */,
+				9D4E9D351FFF250F0020604C /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D56DC621FF1E29700C49C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D56DC631FF1E29700C49C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D56DC651FF1E29700C49C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 112890758E853CF87A44B984 /* Pods-SheUp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SheUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sweet.SheUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SheUp/SheUpBridge.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D56DC661FF1E29700C49C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3CB5D65AD7A4BD15691C419 /* Pods-SheUp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SheUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sweet.SheUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SheUp/SheUpBridge.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D56DC4D1FF1E29700C49C24 /* Build configuration list for PBXProject "SheUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D56DC621FF1E29700C49C24 /* Debug */,
+				9D56DC631FF1E29700C49C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D56DC641FF1E29700C49C24 /* Build configuration list for PBXNativeTarget "SheUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D56DC651FF1E29700C49C24 /* Debug */,
+				9D56DC661FF1E29700C49C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D56DC4A1FF1E29700C49C24 /* Project object */;
+}
